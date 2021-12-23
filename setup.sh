@@ -1,6 +1,6 @@
 ### Sets up a virtualenv and installs Python packages
-virtualenv -p python3 env
-source env/bin/activate
+virtualenv -p python3 mocha_env
+source mocha_env/bin/activate
 pip install -r requirements.txt
 pip install git+https://github.com/salaniz/pycocoevalcap
 
