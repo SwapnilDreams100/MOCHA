@@ -10,6 +10,10 @@ cd data/pretraining/raw
 
 # Download BoolQ from https://github.com/google-research-datasets/boolean-questions and place it into `pretrain_data/raw/boolq`
 mkdir -p boolq
+cd boolq
+!wget https://storage.cloud.google.com/boolq/train.jsonl
+!wget https://storage.cloud.google.com/boolq/dev.jsonl
+cd ..
 
 # Download MCTest
 wget https://github.com/mcobzarenco/mctest/archive/master.zip
